@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /VideoSlicing
+/public/logs
 
 # testing
 /coverage
