@@ -1,0 +1,126 @@
+[2025-01-15T19:26:05.572] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:14.760] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:53.829] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:54.995] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:55.910] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:58.196] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
+[2025-01-15T19:26:59.226] [ERROR] cheese - SyntaxError: Unexpected token 'u', ..."eam_url": url,
+    "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (E:\gitlab\now\livereview\services\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\gitlab\now\livereview\services\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:238:16)
+    at done (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\gitlab\now\livereview\services\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n     "stream_url": url,\r\n    "wsport": wsport\r\n}',
+  type: 'entity.parse.failed'
+}
