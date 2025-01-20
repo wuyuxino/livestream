@@ -7,6 +7,7 @@ const bodyParser = require("body-parser")
 const log = require('./config/log')
 const fileController = require('./controller/file.js')
 const liveController = require('./controller/live')
+const videoController = require('./controller/video')
 const globalConfig = require('./config/global')
 const errorConfig = require('./config/errorhand')
 
@@ -39,7 +40,14 @@ app.post('/live/api/v1/stream/captions', liveController.liveStreamingCaptions)
 app.post('/live/api/v1/stream/play', liveController.liveStreamingPlay)
 app.post('/live/api/v1/stream/closews', liveController.liveStreamingCloseWs)
 
+// text
+app.post('/live/api/v1/stream/audiotext', liveController.liveStreamingAudioText)
+
 app.get('/file/api/v1/download', fileController.fileDownload)
+
+// video
+app.get('/video/api/v1/stream/montage', videoController.videoMontage)
+app.get('/video/api/v1/stream/scale', videoController.videoScale)
 
 // server port
 app.listen(globalConfig.serverport, () => {

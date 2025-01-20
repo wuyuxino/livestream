@@ -12,6 +12,7 @@ let ffmpeg_process_video = null;
 let ffmpeg_process_audio = null;
 let ffmpeg_process_captions = null;
 
+
 exports.liveStreamingVideo = async function (req, res, next) {
     let filePath = `./VideoSlicing/${req.body.stream_name}/`
 
@@ -167,4 +168,8 @@ exports.liveStreamingCloseWs = async function (req, res, next) {
     }
 
     return res.status(200).json({ "message": "Stream stopped" })
+}
+
+exports.liveStreamingAudioText = async function (req, res, next) {
+    return res.status(200).json({ "message": "Stream Text" })
 }
