@@ -26,9 +26,11 @@ exports.videoMontage = async function (req, res, next) {
         })
         .on('end', function () {
             console.log('推流结束');
+            command.kill();
             return res.status(200).json({ "message": "推流结束" })
         })
         .on('error', function (err) {
+            command.kill();
             console.error('推流出错: ', err);
             // 更详细的错误日志记录
             if (err.message.includes('Invalid argument')) {
@@ -47,7 +49,7 @@ exports.videoMontage = async function (req, res, next) {
 exports.videoScale = async function (req, res, next) {
     const command = ffmpeg();
     // 输入四个视频文件
-    command.input('rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid');
+    command.input('rtmp://127.0.0.1:1935/live/test');
 
     // 使用 complexFilter 实现 crop 和 scale 操作
     command.complexFilter([
@@ -59,17 +61,19 @@ exports.videoScale = async function (req, res, next) {
     command.outputOptions('-an')
         .outputFormat('flv')
         .map('[scaled]')
-        .output('rtmp://127.0.0.1:1935/live/test')
+        .output('rtmp://127.0.0.1:1935/live/test111')
         .on('start', function (commandLine) {
             console.log('推流开始: ' + commandLine);
             return res.status(200).json({ "message": commandLine })
         })
         .on('end', function () {
             console.log('推流结束');
+            command.kill();
             return res.status(200).json({ "message": "推流结束" })
         })
         .on('error', function (err) {
             console.error('推流出错: ', err);
+            command.kill();
             // 更详细的错误日志记录
             if (err.message.includes('Invalid argument')) {
                 console.error('可能是输出地址错误或权限问题，请检查推流地址和权限。');
