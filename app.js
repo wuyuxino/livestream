@@ -47,6 +47,11 @@ app.get('/file/api/v1/download', fileController.fileDownload)
 
 // video
 app.get('/video/api/v1/stream/montage', videoController.videoMontage)
+app.get('/video/api/v1/stream/montageTest', videoController.videoMontageTest)
+app.get('/video/api/v1/stream/videoyyxz', videoController.videoYyXz)
+app.get('/video/api/v1/stream/videotsjbxz', videoController.videoTsJbXz)
+
+
 app.get('/video/api/v1/stream/scale', videoController.videoScale)
 
 // server port
