@@ -12,7 +12,7 @@ let ffmpeg_process_video = null;
 let ffmpeg_process_audio = null;
 let ffmpeg_process_captions = null;
 
-
+// 直播流视频裁剪
 exports.liveStreamingVideo = async function (req, res, next) {
     let filePath = `./VideoSlicing/${req.body.stream_name}/`
 
@@ -40,6 +40,7 @@ exports.liveStreamingVideo = async function (req, res, next) {
 
 }
 
+// 直播流音频裁剪
 exports.liveStreamingAudio = async function (req, res, next) {
     let errors = validationResult(req)
     if (!errors.isEmpty()) {
@@ -71,6 +72,7 @@ exports.liveStreamingAudio = async function (req, res, next) {
         .run();
 }
 
+// 获取直播中字幕流
 exports.liveStreamingCaptions = async function (req, res, next) {
     let errors = validationResult(req)
     if (!errors.isEmpty()) {
@@ -170,6 +172,7 @@ exports.liveStreamingCloseWs = async function (req, res, next) {
     return res.status(200).json({ "message": "Stream stopped" })
 }
 
+// 音频转文字-调用本地python接口
 exports.liveStreamingAudioText = async function (req, res, next) {
     return res.status(200).json({ "message": "Stream Text" })
 }
