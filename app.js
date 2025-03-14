@@ -8,6 +8,7 @@ const log = require('./config/log')
 const fileController = require('./controller/file.js')
 const liveController = require('./controller/live')
 const videoController = require('./controller/video')
+const storageController = require('./controller/storage')
 const globalConfig = require('./config/global')
 const errorConfig = require('./config/errorhand')
 
@@ -53,6 +54,14 @@ app.get('/video/api/v1/stream/videotsjbxz', videoController.videoTsJbXz)
 
 
 app.get('/video/api/v1/stream/scale', videoController.videoScale)
+
+// storage Audit data
+app.post('/storage/api/v1/data/save', storageController.saveData)
+app.get('/storage/api/v1/data/search', storageController.searchData)
+app.post('/storage/api/v1/data/remove', storageController.searchRemove)
+
+app.get('/storage/api/v1/file/search', storageController.searchFile)
+app.post('/storage/api/v1/file/remove', storageController.removeFile)
 
 // server port
 app.listen(globalConfig.serverport, () => {
